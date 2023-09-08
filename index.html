@@ -2,10 +2,182 @@
 <html>
 <head>
     <title>Hurricanes and Tropical Storms Tracker</title>
-    <style>
-    </style>
+    <Style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        [hazard] {
+            color: red;
+        }
+
+        [storm] {
+            background-color: rgb(165, 165, 165);
+            border: 7px solid black;
+            padding: 30px;
+            color: white;
+            display: flex;
+            margin: 10px;
+        }
+
+        [catIndex] {
+            background-color: rgb(165, 165, 165);
+            border: 7px solid black;
+            padding: 30px;
+            color: white;
+            margin: 10px;
+        }
+
+        [tdcl] {
+            color:antiquewhite;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        [NOW] {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+
+        [CAT] {
+            font-weight: 900;
+            color: white;
+            text-align: center;
+        }
+
+        [OS] {
+            color:white;
+            text-decoration: underline;
+        }
+
+        [TD] {
+            background-color: greenyellow;
+            color: black;
+        }
+        
+        [TS] {
+            background-color: green;
+        }
+
+        [H1],[H2] {
+            background-color: orange;
+        }
+
+        [H3],[H4] {
+            background-color: orangered;
+        }
+
+        [H5] {
+            background-color: darkred;
+        }
+
+        [title] {
+            display: flex;
+        }
+
+        [src="./recentStorm.png"] {
+            padding-left: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        
+        [p2m] {
+            padding-left: 200px;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+        }
+    </Style>
 </head>
 <body>
+    <h1>🌀 Hurricane Updates 🌀</h1>
+    <div storm>
+        <ul>
+            <li H1 CAT>H1 – Hurricane Cat 1</li>
+            <li H2 CAT>H2 – Hurricane Cat 2</li>
+            <li H3 CAT>H3 – Hurricane Cat 3</li>
+            <li H4 CAT>H4 – Hurricane Cat 4</li>
+            <li H5 CAT>H5 – Hurricane Cat 5</li>
+        </ul>
+        <ul>
+            <li TS CAT>TS – Tropical Storm</li>
+            <li TD CAT>TD – Tropical Depression</li>
+            <li OS CAT>OS – Organized Storm</li>
+        </ul>
+    </div>
+    <div storm>
+        <div data>
+            <h1 title>Hurricane Lee <img src="./recentStorm.png" /></h1>
+            <h3 hazard>Hurricane Category 2</h3>
+            <table tdcl>
+                <tr>
+                    <th>Time</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/9/23</td>
+                    <td H4 CAT>H4</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/9/23</td>
+                    <td H4 CAT>H4</td>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/8/23</td>
+                    <td H5 CAT>H5</td>
+                </tr>
+                <tr NOW>
+                    <td>5 a.m</td>
+                    <td>9/8/23</td>
+                    <td H5 CAT>H5</td>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/7/23</td>
+                    <td H2 CAT>H2</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/7/23</td>
+                    <td H1 CAT>H1</td>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/6/23</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/6/23</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/5/23</td>
+                    <td TD CAT>TD</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/5/23</td>
+                    <td OS CAT>OS</td>
+                </tr>
+            </table>
+        </div>
+        <dic p2m>
+            <input type="text" value="USVI"><br/>
+            <p>
+                Loading...
+            </p>
+        </dic>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>
