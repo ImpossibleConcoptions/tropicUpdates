@@ -11,6 +11,14 @@
             color: red;
         }
 
+        [non_hazard] {
+            color: green
+        }
+
+        [mod_hazard] {
+            color: orangered
+        }
+
         [storm] {
             background-color: rgb(165, 165, 165);
             border: 7px solid black;
@@ -91,6 +99,14 @@
             background-color: black;
             color: white;
         }
+
+        [bold] {
+            font-weight: 900;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
     </Style>
 </head>
 <body>
@@ -112,7 +128,7 @@
     <div storm>
         <div data>
             <h1 title>Hurricane Lee <img src="./recentStorm.png" /></h1>
-            <h3 hazard>Hurricane Category 2</h3>
+            <h3 hazard>Hurricane Category 5</h3>
             <table tdcl>
                 <tr>
                     <th>Time</th>
@@ -172,10 +188,10 @@
             </table>
         </div>
         <dic p2m>
-            <input type="text" value="USVI"><br/>
-            <p>
+            <input type="text" value="USVI" id="where"><br/>
+            <h2 id="result">
                 Loading...
-            </p>
+            </h2>
         </dic>
     </div>
     <script src="./index.js"></script>
