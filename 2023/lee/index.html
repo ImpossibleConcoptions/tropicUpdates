@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hurricanes and Tropical Storms Tracker</title>
+    <title>Hurricane Lee – 2023</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -28,16 +28,6 @@
             background-image: 
                 linear-gradient(
                     -45deg,
-                    transparent 50%,
-                    hsl(0, 39%, 70%) 50%
-                ),
-                linear-gradient(
-                    15deg,
-                    transparent 50%,
-                    hsl(0, 39%, 70%) 50%
-                ),
-                linear-gradient(
-                    75deg,
                     transparent 50%,
                     hsl(0, 39%, 70%) 50%
                 );
@@ -135,8 +125,7 @@
             font-weight: 400;
         }
 
-
-        [seeDetails] {
+        [goBack] {
             background-color: rgba(255,122,24,.75);
             border: none;
             font-size: 30px;
@@ -151,111 +140,7 @@
     </style>
 </head>
 <body>
-    <h1>🌀 Hurricane Updates 🌀</h1>
-    <table storm index>
-        <tr>
-            <td H1 CAT>H1 – Hurricane Cat 1</td>
-            <td H2 CAT>H2 – Hurricane Cat 2</td>
-            <td H3 CAT>H3 – Hurricane Cat 3</td>
-            <td H4 CAT>H4 – Hurricane Cat 4</td>
-        </tr>
-        <tr>
-            <td H5 CAT>H5 – Hurricane Cat 5</td>
-            <td TS CAT>TS – Tropical Storm</td>
-            <td TD CAT>TD – Tropical Depression</td>
-            <td OS CAT>OS – Organized Storm</td>
-        </tr>
-    </table>
-
-    <div storm>
-        <div data>
-            <h1 title>Tropical Storm Margot <img src="./recentStorm.png" /></h1>
-            <h3 hazard>Tropical Storm</h3>
-            <table tdcl>
-                <tr>
-                    <th>Time</th>
-                    <th>Date</th>
-                    <th>Category</th>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/13/23</td>
-                    <td OS CAT>OS</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/13/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/12/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/12/23</td>
-                    <td H2 CAT>H2</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/11/23</td>
-                    <td H3 CAT>H3</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/11/23</td>
-                    <td H2 CAT>H2</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/10/23</td>
-                    <td H2 CAT>H2</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/10/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/9/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/9/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/8/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr NOW>
-                    <td>5 a.m</td>
-                    <td>9/8/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/7/23</td>
-                    <td TD CAT>TD</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/7/23</td>
-                    <td OS CAT>OS</td>
-                </tr>
-            </table>
-        </div>
-        <dic p2m>
-            <h2>
-                Tropical Storm Margot Will Not Affect <span bold>ANY</span> Land
-            </h2>
-        </dic>
-    </div>
-
+    <a href="../.."><button goBack>Go back</button></a>
     <div storm>
         <div data>
             <h1 title>Hurricane Lee</h1>
@@ -319,12 +204,12 @@
             </table>
         </div>
         <dic p2m>
-            <h2>
-                Tropical Storm Margot Will Affect Land
+            <input type="text" value="USVI" id="where"><br/>
+            <h2 id="result">
+                Loading...
             </h2>
-            <a href="2023/lee"><button seeDetails>See Details And Search Countries</button></a>
         </dic>
     </div>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

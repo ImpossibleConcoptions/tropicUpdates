@@ -21,7 +21,6 @@ var data = {
     <span bold hazard>STAY AWAY FROM WATER</span>
     `,
     'US' : `
-    Conditions for the US:<br/><br/>
     Please Be More Specific (Use State Name)
     `
 }
