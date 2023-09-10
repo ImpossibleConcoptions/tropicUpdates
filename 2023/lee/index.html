@@ -31,6 +31,7 @@
                     transparent 50%,
                     hsl(0, 39%, 70%) 50%
                 );
+            margin: 0 auto;
         }
 
         [hazard] {
@@ -126,25 +127,41 @@
         }
 
         [goBack] {
-            background-color: rgba(255,122,24,.75);
+            background-color: transparent;
             border: none;
             font-size: 30px;
-            padding: 10px;
             border-radius: 10px;
         }
 
         button:hover {
             cursor: pointer;
-            background-color: rgba(255,122,24,.95);
+        }
+
+        footer {
+            background-color: rgb(235, 63, 0);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #6cf;
+            z-index: 1;
+        }
+
+        [last] {
+            margin-bottom: 30px;
+        }
+
+        body a {
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <a href="../.."><button goBack>Go back</button></a>
-    <div storm>
+    <a href="../.."><button goBack>←</button></a>
+    <div storm last>
         <div data>
             <h1 title>Hurricane Lee</h1>
-            <h3 hazard>Hurricane Category 5</h3>
+            <h3 hazard>Hurricane Category 3</h3>
             <table tdcl>
                 <tr>
                     <th>Time</th>
@@ -152,73 +169,58 @@
                     <th>Category</th>
                 </tr>
                 <tr>
-                    <td>5 p.m</td>
-                    <td>9/13/23</td>
-                    <td OS CAT>OS</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/13/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/12/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/12/23</td>
+                    <td>5 a.m.</td>
+                    <td>9/11/23</td>
                     <td H2 CAT>H2</td>
                 </tr>
+                <tr NOW>
+                    <td>5 a.m</td>
+                    <td>9/10/23</td>
+                    <td H4 CAT>H4</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/9/23</td>
+                    <td H3 CAT>H3</td>
+                </tr>
                 <tr>
                     <td>5 p.m</td>
-                    <td>9/11/23</td>
+                    <td>9/8/23</td>
                     <td H3 CAT>H3</td>
                 </tr>
                 <tr>
                     <td>5 a.m</td>
-                    <td>9/11/23</td>
-                    <td H2 CAT>H2</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/10/23</td>
-                    <td H2 CAT>H2</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/10/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
-                    <td>9/9/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr NOW>
-                    <td>5 a.m</td>
-                    <td>9/9/23</td>
-                    <td H1 CAT>H1</td>
-                </tr>
-                <tr>
-                    <td>5 p.m</td>
                     <td>9/8/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr>
-                    <td>5 a.m</td>
-                    <td>9/8/23</td>
-                    <td TS CAT>TS</td>
+                    <td H5 CAT>H5</td>
                 </tr>
                 <tr>
                     <td>5 p.m</td>
                     <td>9/7/23</td>
+                    <td H2 CAT>H2</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/7/23</td>
+                    <td H1 CAT>H1</td>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/6/23</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>5 a.m</td>
+                    <td>9/6/23</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>5 p.m</td>
+                    <td>9/5/23</td>
                     <td TD CAT>TD</td>
                 </tr>
                 <tr>
                     <td>5 a.m</td>
-                    <td>9/7/23</td>
+                    <td>9/5/23</td>
                     <td OS CAT>OS</td>
                 </tr>
             </table>
@@ -230,6 +232,9 @@
             </h2>
         </dic>
     </div>
+    <footer>
+        Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

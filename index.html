@@ -41,6 +41,17 @@
                     transparent 50%,
                     hsl(0, 39%, 70%) 50%
                 );
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: rgb(235, 63, 0);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #6cf;
+            z-index: 1;
         }
 
         [hazard] {
@@ -148,10 +159,18 @@
             cursor: pointer;
             background-color: rgba(255,122,24,.95);
         }
+
+        [last] {
+            margin-bottom: 30px;
+        }
+
+        [bodied] {
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>🌀 Hurricane Updates 🌀</h1>
+    <h1 bodied>🌀 Hurricane Updates 🌀</h1>
     <table storm index>
         <tr>
             <td H1 CAT>H1 – Hurricane Cat 1</td>
@@ -169,8 +188,8 @@
 
     <div storm>
         <div data>
-            <h1 title>Tropical Storm Margot <img src="./recentStorm.png" /></h1>
-            <h3 hazard>Tropical Storm</h3>
+            <h1 title>Hurricane Margot <span hazard style="margin-left: 15px">!!</span></h1>
+            <h3 hazard>Hurricane Category 1</h3>
             <table tdcl>
                 <tr>
                     <th>Time</th>
@@ -212,7 +231,7 @@
                     <td>9/10/23</td>
                     <td H2 CAT>H2</td>
                 </tr>
-                <tr>
+                <tr NOW>
                     <td>5 a.m</td>
                     <td>9/10/23</td>
                     <td H1 CAT>H1</td>
@@ -222,7 +241,7 @@
                     <td>9/9/23</td>
                     <td H1 CAT>H1</td>
                 </tr>
-                <tr NOW>
+                <tr>
                     <td>5 a.m</td>
                     <td>9/9/23</td>
                     <td H1 CAT>H1</td>
@@ -256,10 +275,10 @@
         </dic>
     </div>
 
-    <div storm>
+    <div storm last>
         <div data>
             <h1 title>Hurricane Lee</h1>
-            <h3 hazard>Hurricane Category 5</h3>
+            <h3 hazard>Hurricane Category 3</h3>
             <table tdcl>
                 <tr>
                     <th>Time</th>
@@ -268,15 +287,15 @@
                 </tr>
                 <tr>
                     <td>5 a.m.</td>
-                    <td>9/11/2023</td>
+                    <td>9/11/23</td>
                     <td H2 CAT>H2</td>
                 </tr>
-                <tr>
+                <tr NOW>
                     <td>5 a.m</td>
                     <td>9/10/23</td>
                     <td H4 CAT>H4</td>
                 </tr>
-                <tr NOW>
+                <tr>
                     <td>5 a.m</td>
                     <td>9/9/23</td>
                     <td H3 CAT>H3</td>
@@ -325,11 +344,15 @@
         </div>
         <dic p2m>
             <h2>
-                Tropical Storm Margot Will Affect Land
+                Hurricane Lee <span bold>WILL</span> Affect Land,
+                No <span bold>DIRECT</span> Impact
             </h2>
             <a href="2023/lee"><button seeDetails>See Details And Search Countries</button></a>
         </dic>
     </div>
+    <footer>
+        Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
+    </footer>
     <script src="./index.js"></script>
 </body>
 </html>
