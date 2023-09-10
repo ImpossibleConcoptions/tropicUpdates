@@ -146,7 +146,6 @@
             font-weight: 400;
         }
 
-
         [seeDetails] {
             background-color: rgba(255,122,24,.75);
             border: none;
@@ -155,21 +154,38 @@
             border-radius: 10px;
         }
 
-        button:hover {
+        [seeDetails]:hover {
             cursor: pointer;
             background-color: rgba(255,122,24,.95);
         }
 
         [last] {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         [bodied] {
             margin: 10px;
         }
+
+        [shml] {
+            border: none;
+            font-size: 20px;
+            padding: 7px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        [shml]:hover {
+            cursor: pointer;
+            background-color: rgba(255, 203, 165, 0.95);
+        }
+
+        html {
+            background-image: url(loading_spinner.gif);
+        }
     </style>
 </head>
-<body>
+<body hidden>
     <h1 bodied>🌀 Hurricane Updates 🌀</h1>
     <table storm index>
         <tr>
@@ -188,9 +204,9 @@
 
     <div storm>
         <div data>
-            <h1 title>Hurricane Margot <span hazard style="margin-left: 15px">!!</span></h1>
+            <h1 title>Hurricane Margot <button shml onclick="show('Marg')" id="remChMarg">Show More</button></h1>
             <h3 hazard>Hurricane Category 1</h3>
-            <table tdcl>
+            <table tdcl remMarg>
                 <tr>
                     <th>Time</th>
                     <th>Date</th>
@@ -268,7 +284,7 @@
                 </tr>
             </table>
         </div>
-        <dic p2m>
+        <dic p2m remMarg>
             <h2>
                 Tropical Storm Margot Will Not Affect <span bold>ANY</span> Land
             </h2>
@@ -277,9 +293,9 @@
 
     <div storm last>
         <div data>
-            <h1 title>Hurricane Lee</h1>
+            <h1 title>Hurricane Lee <span hazard style="margin-left: 15px">!!</span> <button shml onclick="show('Lee')" id="remChLee">Show More</button></h1>
             <h3 hazard>Hurricane Category 3</h3>
-            <table tdcl>
+            <table tdcl remLee>
                 <tr>
                     <th>Time</th>
                     <th>Date</th>
@@ -342,7 +358,7 @@
                 </tr>
             </table>
         </div>
-        <dic p2m>
+        <dic p2m remLee>
             <h2>
                 Hurricane Lee <span bold>WILL</span> Affect Land,
                 No <span bold>DIRECT</span> Impact
@@ -353,6 +369,6 @@
     <footer>
         Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
