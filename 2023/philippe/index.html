@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tropical Storm Philippe – 2023</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        [storm] {
+            background-image: linear-gradient(-15deg,rgba(255,122,24,.75),#fff);
+            margin: 10px;
+            overflow: hidden;
+            color: #434343;
+            padding: 1rem;
+            border-radius: 8px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+        }
+
+        [index] {
+            background-image: linear-gradient(-15deg,rgba(255, 70, 24, 0.75),#fff);
+        }
+
+        body {
+            background-color: hsl(0, 39% 15%);
+            background-image: 
+                linear-gradient(
+                    -45deg,
+                    transparent 50%,
+                    hsl(0, 39%, 70%) 50%
+                );
+            margin: 0 auto;
+        }
+
+        [hazard] {
+            color: red;
+        }
+
+        [non_hazard] {
+            color: green
+        }
+
+        [mod_hazard] {
+            color: orangered
+        }
+
+        [catIndex] {
+            background-color: rgb(165, 165, 165);
+            border: 7px solid black;
+            padding: 30px;
+            color: white;
+            margin: 10px;
+        }
+
+        [tdcl] {
+            color:rgb(44, 44, 44);
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        [NOW] {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+
+        [CAT] {
+            font-weight: 900;
+            color: white;
+            text-align: center;
+        }
+
+        [OS] {
+            color:black;
+            text-decoration: underline;
+        }
+
+        [TD] {
+            background-color: greenyellow;
+            color: black;
+        }
+        
+        [TS] {
+            background-color: green;
+        }
+
+        [H1],[H2] {
+            background-color: orange;
+        }
+
+        [H3],[H4] {
+            background-color: orangered;
+        }
+
+        [H5] {
+            background-color: darkred;
+        }
+
+        [title] {
+            display: flex;
+        }
+
+        [src="./recentStorm.png"] {
+            padding-left: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        
+        [p2m] {
+            padding-left: 200px;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+        }
+
+        [bold] {
+            font-weight: 900;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+
+        [goBack] {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgb(235, 63, 0);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #6cf;
+            z-index: 1;
+        }
+
+        [last] {
+            margin-bottom: 50px;
+        }
+
+        body a {
+            margin: 10px;
+        }
+
+        [strmimg] {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../.."><button goBack>←</button></a>
+    <div storm>
+        <div data>
+            <h1 title>Philippe</h1>
+            <h3 hazard>Tropical Storm</h3>
+            <table tdcl>
+                <h2 bold>FORECAST <small>(Data From Forecaster Berg)</small></h2>
+                <tr>
+                    <th>Date</th>
+                    <th>Speed</th>
+                    <th>Category</th>
+                </tr>
+                <tr>
+                    <td>OCT 4, 2023</td>
+                    <td>40 KT  45 MPH</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>OCT 5, 2023</td>
+                    <td>40 KT  45 MPH</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>OCT 6, 2023</td>
+                    <td>45 KT  50 MPH</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>OCT 7, 2023</td>
+                    <td>50 KT  60 MPH</td>
+                    <td TS CAT>TS</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div storm index>
+        <div>
+            <h4>FORECASTER BERG</h4>
+            <p>
+                Visible satellite images this morning indicate that Philippe's
+                low-level circulation remains elongated, and the center is still
+                located on the northwestern edge of an area of deep convection.
+                This convective activity continues to produce heavy rains over the
+                U.S. and British Virgin Islands, as well as northeastern Puerto
+                Rico.  The initial intensity remains 40 kt based on a blend of the
+                latest subjective and objective satellite estimates, with sustained
+                tropical-storm-force winds limited to the eastern semicircle.<br><br>
+                
+                Philippe has turned toward the north-northwest with an initial
+                motion of 335/6 kt.  The flow between a strong mid-tropospheric
+                high over the central Atlantic and a deep-layer trough just off the 
+                east coast of Florida is expected to steer Philippe northward, and 
+                at a faster forward speed, beginning tonight and continuing for the 
+                next few days.  The track guidance is in good agreement on this 
+                general scenario, although there is some east-to-west spread among 
+                the models related to how Philippe interacts with a non-tropical 
+                low that is forecast to develop to its west in about 2-3 days.  
+                After day 3, a deeper trough is forecast to swing across eastern 
+                North America, and much of the guidance suggests that Philippe 
+                might bend back to the left a bit and approach Atlantic Canada or 
+                eastern Maine in 3-4 days.  Overall, the NHC track forecast is near 
+                the middle of the guidance envelope, close to the TVCX and HCCA 
+                consensus aids, and is also nearly identical to the previous 
+                prediction.<br><br>
+                
+                Overall, moderate-to-strong vertical shear is expected to persist 
+                over Philippe during the next few days, and very little change in 
+                intensity is forecast during that time.  Once Philippe begins to 
+                interact with the developing low pressure to its west and the 
+                associated upper-level trough, baroclinic influences could support 
+                some strengthening.  This strengthening is shown by most of the 
+                intensity models, including the GFS and ECMWF global models, and 
+                the official forecast therefore shows a peak intensity of 50 kt at 
+                60 and 72 hours.  Model-based phase-space diagrams, simulated 
+                satellite imagery, and SHIPS diagnostics all suggest that Philippe 
+                will become attached to a front between days 3 and 4 to the north 
+                of Bermuda, and the official forecast therefore shows a completion 
+                of extratropical transition by Sunday morning.<br><br>
+            </p>
+        </div>
+    </div>
+    <div storm index>
+        <div>
+            <h4>FORECASTER PAPIN</h4>
+            <p>
+                HAZARDS AFFECTING LAND<br><br>
+                ----------------------<br><br>
+                Key messages for Philippe can be found in the Tropical Cyclone
+                Discussion under AWIPS header MIATCDAT2 and WMO header WTNT42 KNHC
+                and on the web at hurricanes.gov/text/MIATCDAT2.shtml<br><br>
+                
+                RAINFALL:  Philippe is forecast to produce the following rainfall
+                amounts through today:<br><br>
+                
+                The United States & British Virgin Islands: 4 to 8 inches with
+                maximum amounts to 12 inches.<br><br>
+                
+                Puerto Rico: 2 to 4 inches.<br><br>
+                
+                This rainfall is likely to result in scattered flash flooding.<br><br>
+                
+                WIND:  Gusty winds are likely to continue across portions of the
+                the Virgin Islands through early today.<br><br>
+                
+                SURF:  Swells generated by Philippe will affect portions of the
+                Atlantic coasts of the northern Leeward Islands, the Virgin Islands,
+                and Puerto Rico for another couple of days.  Swells are expected to
+                reach Bermuda by late Thursday.  These conditions are likely to
+                cause life-threatening surf and rip currents. Please consult
+                products from your local weather office.<br><br>
+            </p>
+        </div>
+    </div>
+    <div storm index>
+        <div>
+            <h2 bold>IMAGES</h2>
+            <img strmimg src="src/stormtrack.png">
+            <a href="https://cyclonicwx.com/floater/17L/ir/"><img strmimg src="src/satimg.png"></a>
+            <img strmimg src="src/forecast.png">
+            <img strmimg src="src/seatemp.png">
+        </div>
+    </div>
+    <div storm index last>
+        <div>
+            <h4>MORE DATA ABOUT PHILIPPE:</h4>
+            <ul>
+                <li><a href="https://www.nhc.noaa.gov/archive/2023/PHILIPPE.shtml">1 (FORECASTER DATA)</a></li>
+                <li><a href="https://cyclonicwx.com/storms/al17/">2 (SATELLITE IMAGE GIF)</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>

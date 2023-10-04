@@ -183,6 +183,19 @@
         html {
             background-image: url(loading_spinner.gif);
         }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        [sas] {
+            float: right
+        }
     </style>
 </head>
 <body hidden>
@@ -204,56 +217,38 @@
 
     <div storm>
         <div data>
-            <h1 title>Tropical Storm Philippe <button shml onclick="show('Philippe')" id="remChPhilippe">Show More</button></h1>
+            <h1 title><a href="2023/philippe">Philippe</a></h1>
             <h3 hazard>Tropical Storm</h3>
-            <table tdcl remPhilippe hidden>
+            <table tdcl>
+                <h2 bold>FORECAST <small>(Data From Forecaster Berg)</small></h2>
                 <tr>
-                    <th>Time</th>
                     <th>Date</th>
+                    <th>Speed</th>
                     <th>Category</th>
                 </tr>
                 <tr>
-                    <td>5 a.m</td>
-                    <td>10/8/23</td>
+                    <td>OCT 4, 2023</td>
+                    <td>40 KT  45 MPH</td>
                     <td TS CAT>TS</td>
                 </tr>
                 <tr>
-                    <td>5 a.m</td>
-                    <td>10/7/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr hazard>
-                    <td>5 a.m</td>
-                    <td>10/6/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr hazard>
-                    <td>5 a.m</td>
-                    <td>10/5/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr NOW hazard>
-                    <td>5 a.m</td>
-                    <td>10/4/23</td>
-                    <td TS CAT>TS</td>
-                </tr>
-                <tr hazard>
-                    <td>5 a.m</td>
-                    <td>10/3/23</td>
+                    <td>OCT 5, 2023</td>
+                    <td>40 KT  45 MPH</td>
                     <td TS CAT>TS</td>
                 </tr>
                 <tr>
-                    <td>5 a.m</td>
-                    <td>10/2/23</td>
+                    <td>OCT 6, 2023</td>
+                    <td>45 KT  50 MPH</td>
+                    <td TS CAT>TS</td>
+                </tr>
+                <tr>
+                    <td>OCT 7, 2023</td>
+                    <td>50 KT  60 MPH</td>
                     <td TS CAT>TS</td>
                 </tr>
             </table>
         </div>
-        <div p2m remPhilippe hidden>
-            <h2>
-                Tropical Storm Philippe will cause <span bold>some</span> rain, lightning, and wind gusts in the <span bold>USVI</span> and Lesser Antillies only
-            </h2>
-        </div>
+        <button shml sas>SEE ALL STATS</button>
     </div>
     <footer>
         Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
