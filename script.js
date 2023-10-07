@@ -14,9 +14,10 @@ var threats = [
 ]
 
 const username = location2.attributes["usrnm"]
-const loc = location2.attributes["loc"].replaceAll("+", " ")
+const loc = location2.attributes["loc"]
 
 if (username != undefined && loc != undefined) {
+    loc = loc.replaceAll("+", " ")
     var threatsToLoc = 0
     threats[0].forEach(stormthreats => {
         threatsToLoc += (stormthreats.includes(loc) ? 1 : 0) 
