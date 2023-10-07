@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tropical Storm Philippe – 2023</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        [storm] {
+            background-image: linear-gradient(-15deg,rgba(255,122,24,.75),#fff);
+            margin: 10px;
+            overflow: hidden;
+            color: #434343;
+            padding: 1rem;
+            border-radius: 8px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+        }
+
+        [index] {
+            background-image: linear-gradient(-15deg,rgba(255, 70, 24, 0.75),#fff);
+        }
+
+        body {
+            background-color: hsl(0, 39% 15%);
+            background-image: 
+                linear-gradient(
+                    -45deg,
+                    transparent 50%,
+                    hsl(0, 39%, 70%) 50%
+                );
+            margin: 0 auto;
+        }
+
+        [hazard] {
+            color: red;
+        }
+
+        [non_hazard] {
+            color: green
+        }
+
+        [mod_hazard] {
+            color: orangered
+        }
+
+        [catIndex] {
+            background-color: rgb(165, 165, 165);
+            border: 7px solid black;
+            padding: 30px;
+            color: white;
+            margin: 10px;
+        }
+
+        [tdcl] {
+            color:rgb(44, 44, 44);
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        [NOW] {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+
+        [CAT] {
+            font-weight: 900;
+            color: white;
+            text-align: center;
+        }
+
+        [OS] {
+            color:black;
+            text-decoration: underline;
+        }
+
+        [TD] {
+            background-color: greenyellow;
+            color: black;
+        }
+        
+        [TS] {
+            background-color: green;
+        }
+
+        [H1],[H2] {
+            background-color: orange;
+        }
+
+        [H3],[H4] {
+            background-color: orangered;
+        }
+
+        [H5] {
+            background-color: darkred;
+        }
+
+        [title] {
+            display: flex;
+        }
+
+        [src="./recentStorm.png"] {
+            padding-left: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        
+        [p2m] {
+            padding-left: 200px;
+        }
+
+        input, select {
+            background-color: black;
+            color: white;
+        }
+
+        [bold] {
+            font-weight: 900;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+        
+        [bodied] {
+            margin: 10px;
+        }
+
+        [goBack] {
+            background-color: transparent;
+            border: none;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: rgb(235, 63, 0);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #6cf;
+            z-index: 1;
+        }
+
+        [last] {
+            margin-bottom: 50px;
+        }
+
+        body a {
+            margin: 10px;
+        }
+
+        [strmimg] {
+            width: 300px;
+        }
+
+        button, input[type="submit"] {
+            border: none;
+            font-size: 20px;
+            padding: 7px;
+            border-radius: 10px;
+            background-color:whitesmoke;
+            color: black;
+        }
+
+        button:hover, input[type="submit"]:hover {
+            cursor: pointer;
+            background-color: rgba(255, 203, 165, 0.95);
+        }
+    </style>
+</head>
+<body>
+    <a href=".."><button goBack>←</button></a>
+    <h4 bodied>Last Updated: Sat Oct 7, 2023 @ 5:32 PM</h4>
+    <div storm index last>
+        <div>
+            <h1>You are not signed in</h1>
+            <form action="..">
+                <label for="usrnm">Username:</label><br>
+                <input type="text" name="usrnm"/><br>
+                <label for="loc">Location:</label><br>
+                <select name="loc">
+                    <option value="The USVI">USVI</option>
+                    <option value="Bermuda">Bermuda</option>
+                    <option value="East USA">East USA</option>
+                    <option value="West USA">West USA</option>
+                    <option value="Canada">Canada</option>
+                </select><br><br>
+                <input type="submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+    <footer>
+        Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
+    </footer>
+</body>
+</html>
