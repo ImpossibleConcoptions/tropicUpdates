@@ -13,8 +13,8 @@ var threats = [
     }
 ]
 
-const username = location2.attributes["usrnm"]
-const loc = location2.attributes["loc"]
+var username = location2.attributes["usrnm"]
+var loc = location2.attributes["loc"]
 
 if (username != undefined && loc != undefined) {
     loc = loc.replaceAll("+", " ")
