@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hurricanes and Tropical Storms Tracker</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        [storm] {
+            background-image: linear-gradient(-15deg,rgba(255,122,24,.75),#fff);
+            margin: 10px;
+            overflow: hidden;
+            color: #434343;
+            padding: 1rem;
+            border-radius: 8px;
+            z-index: 1;
+            position: relative;
+            display: flex;
+        }
+
+        [index] {
+            background-image: linear-gradient(-15deg,rgba(255, 70, 24, 0.75),#fff);
+        }
+
+        body {
+            background-color: hsl(0, 39% 15%);
+            background-image: 
+                linear-gradient(
+                    -45deg,
+                    transparent 50%,
+                    hsl(0, 39%, 70%) 50%
+                ),
+                linear-gradient(
+                    15deg,
+                    transparent 50%,
+                    hsl(0, 39%, 70%) 50%
+                ),
+                linear-gradient(
+                    75deg,
+                    transparent 50%,
+                    hsl(0, 39%, 70%) 50%
+                );
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: rgb(235, 63, 0);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #6cf;
+            z-index: 1;
+        }
+
+        [hazard] {
+            color: red;
+        }
+
+        [non_hazard] {
+            color: green
+        }
+
+        [mod_hazard] {
+            color: orangered
+        }
+
+        [catIndex] {
+            background-color: rgb(165, 165, 165);
+            border: 7px solid black;
+            padding: 30px;
+            color: white;
+            margin: 10px;
+        }
+
+        [tdcl] {
+            color:rgb(44, 44, 44);
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        [NOW] {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+
+        [CAT] {
+            font-weight: 900;
+            color: white;
+            text-align: center;
+        }
+
+        [OS] {
+            color:black;
+            text-decoration: underline;
+        }
+
+        [TD] {
+            background-color: greenyellow;
+            color: black;
+        }
+        
+        [TS] {
+            background-color: green;
+        }
+
+        [H1],[H2] {
+            background-color: orange;
+        }
+
+        [H3],[H4] {
+            background-color: orangered;
+        }
+
+        [H5] {
+            background-color: darkred;
+        }
+
+        [title] {
+            display: flex;
+        }
+
+        [src="./recentStorm.png"] {
+            padding-left: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        
+        [p2m] {
+            padding-left: 200px;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+        }
+
+        [bold] {
+            font-weight: 900;
+        }
+
+        h2 {
+            font-weight: 400;
+        }
+
+        [seeDetails] {
+            background-color: rgba(255,122,24,.75);
+            border: none;
+            font-size: 30px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        [seeDetails]:hover {
+            cursor: pointer;
+            background-color: rgba(255,122,24,.95);
+        }
+
+        [last] {
+            margin-bottom: 50px;
+        }
+
+        [bodied] {
+            margin: 10px;
+        }
+
+        [shml], button {
+            border: none;
+            font-size: 20px;
+            padding: 7px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+
+        [shml]:hover, button:hover {
+            cursor: pointer;
+            background-color: rgba(255, 203, 165, 0.95);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        [sas] {
+            float: right
+        }
+
+        video {
+            border-radius: 20px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <a href=".."><button goBack>← Go back</button></a>
+    <h1 bodied usrloc>New Here? Watch The New Features Below!</h1>
+    <h4 bodied>Last Updated: Sat Oct 7, 2023 @ 6:25 PM</h4>
+    <div storm index last>
+        <video controls src="vid.mp4"></video>
+    </div>
+    <footer>
+        Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
+    </footer>
+</body>
+</html>

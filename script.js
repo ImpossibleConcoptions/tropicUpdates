@@ -31,5 +31,5 @@ if (username != undefined && loc != undefined) {
             .replaceAll("--phillipeIsThreat--", (threats[1].Philippe.includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
     })
 } else {
-    document.body.innerHTML = "<div storm index last><h1>You are not signed in <h1><a href='./signin'><button>Sign In</button></a></div>"
+    document.body.innerHTML = "<div storm index last><div><h1>You are not signed in </h1><a href='./signin'><button>Sign In</button><br><br><a href='./newhere'>New Here? Click Here!</a></div></div>"
 }
