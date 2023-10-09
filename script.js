@@ -6,10 +6,10 @@ setTimeout(() => {
 
 var threats = [
     [
-        ["Bermuda", "East USA", "Canada"]
+
     ],
     {
-        "Philippe" : ["Bermuda", "East USA", "Canada"]
+        
     }
 ]
 
