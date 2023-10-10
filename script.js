@@ -6,11 +6,9 @@ setTimeout(() => {
 
 var threats = [
     [
-        ["Mexico"],
         ["Mexico"]
     ],
     {
-        "Max" : ["Mexico"],
         "Lidia": ["Mexico"]
     }
 ]
@@ -30,9 +28,29 @@ if (username != undefined && loc != undefined) {
             .replaceAll("--username--", username)
             .replaceAll("--threats--", threatsToLoc)
             .replaceAll("--location--", loc)
-            .replaceAll("--maxThreat--", (threats[1].Max.includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
+            .replaceAll("--are_is--", (threatsToLoc == 1 ? "is" : "are"))
+            .replaceAll("--s_--", (threatsToLoc == 1 ? "" : "s"))
             .replaceAll("--lidiaThreat--", (threats[1].Lidia.includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
     })
 } else {
-    document.body.innerHTML = "<div storm index last><div><h1>You are not signed in </h1><a href='./signin'><button>Sign In</button><br><br><a href='./newhere'>New Here? Click Here!</a></div></div>"
+    document.body.innerHTML = 
+    `
+    <div storm index last>
+        <div>
+            <h1>You are not signed in</h1>
+            <a href='./signin'>
+                <button>Sign In</button>
+                <br><br>
+            </a>
+            <h3>
+                We do not store ANY information, we only get the data though the url at <br> ?usrnm=[[YOUR NAME WILL SHOW HERE]]&loc=[[WHERE YOU LIVE WILL SHOW HERE]]
+            </h3>
+            <a href='./newhere'>New Here? Click Here!</a>
+        </div>
+    </div>
+    `
+}
+
+function reload(element) {
+    var lastsrc = element.src; element.src = ''; setTimeout(() => {element.src = lastsrc}, 1000)
 }
