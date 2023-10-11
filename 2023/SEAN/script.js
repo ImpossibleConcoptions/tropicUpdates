@@ -1,3 +1,3 @@
 function reload(element) {
-    element.src += '&'
+    element.src += '#'
 }

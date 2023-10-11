@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hurricanes and Tropical Storms Tracker</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Tropical Storm Sean – 2023</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -151,7 +150,6 @@
         }
         
         a {
-            text-decoration: none;
             color: inherit;
         }
 
@@ -161,34 +159,20 @@
 
         img {
             border-radius: 20px;
+            width: 300px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
+    <button goBack onclick="history.back()">←</button>
     <center>
-        <h1 bodied usrloc><img src="favicon.ico" width="30pt"> Welcome --username--, there --are_is-- --threats-- threat--s_-- to --location--</h1>
         <h4 bodied>Last Updated: Mon Oct 12, 2023 @ 3:30 PM</h4>
-        <img onclick="reload(this)" src="https://www.nhc.noaa.gov/xgtwo/two_atl_0d0.png?111729" alt="Loading...">
     </center>
-    <table index storm>
-        <tr>
-            <td OS CAT> </td>
-            <td OS CAT>OS – Organized Storm</td>
-            <td TD CAT>TD – Tropical Depression</td>
-            <td TS CAT>TS – Tropical Storm</td>
-        </tr>
-        <tr>
-            <td H1 CAT>CAT 1 – Hurricane Cat 1</td>
-            <td H2 CAT>CAT 2 – Hurricane Cat 2</td>
-            <td H3 CAT>CAT 3 – Hurricane Cat 3</td>
-            <td H4 CAT>CAT 4 – Hurricane Cat 4</td>
-            <td H5 CAT>CAT 5 – Hurricane Cat 5</td>
-        </tr>
-    </table>
-    <div last storm>
+    <div storm>
         <div data>
             <h1 title>Sean <a href="2023/sean"><button seeDetails>See more</button></a></h1>
-            <h3 hazard usrloc>Tropical Storm ... --seanThreat--</h3>
+            <h3 hazard usrloc>Tropical Storm</h3>
             <table tdcl>
                 <h2 bold>FORECAST</h2>
                 <tr>
@@ -234,24 +218,43 @@
                     <td>N/A</td>
                 </tr>
             </table>
+            <h2 bold>SUMMARY OF FORECASTERS OF THE NHC (National Hurricane Center) & LHW (Leonard Hurricane Watches)</h2>
+            <p>
+                No affects on land
+            </p>
+        </div>
+        <div>
+            <iframe id="nhc1" width="320" height="280" scrolling="no" frameborder="0" src="https://www.nhc.noaa.gov/widgets/nhc_widget.shtml"></iframe>
+        </div>
+    </div>
+    <div storm>
+        <div kpm>
+            <h2 bold>IMAGES <h3><small>(Click on any image to reload)</small></h3></h2>
+            <img onclick="reload(this)" strmimg src="https://cyclonicwx.com/data/tracks/al192023track.png" alt="Loading..."><p>Track</p>
+        </div>
+        <div kpm>
+            <img onclick="reload(this)" strmimg src="https://cyclonicwx.com/data/sat/gifs/19L_ir.gif" alt="Loading..."><p>Satelite Image</p>
+        </div>
+        <div kpm>
+            <img onclick="reload(this)" strmimg src="https://www.nhc.noaa.gov/storm_graphics/AT19/AL192023_5day_cone_no_line_and_wind.png" alt="Loading..."><p>Forecast</p>
+        </div>
+        <div kpm>
+            <img onclick="reload(this)" strmimg src="https://cyclonicwx.com/data/sst/crw_sst_19L.png" alt="Loading..."><p>Sea Surface Tempatures</p>
+        </div>
+    </div>
+    </div>
+    <div last index storm>
+        <div>
+            <h4>MORE DATA ABOUT SEAN:</h4>
+            <ul>
+                <li><a href="https://www.nhc.noaa.gov/archive/2023/SEAN.shtml">1 (FORECASTER DATA, NHC)</a></li>
+                <li><a href="https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/145225.shtml?gm_track#contents">2 (INTERACTIVE MAP, NHC)</a></li>
+            </ul>
         </div>
     </div>
     <footer>
         Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
     </footer>
-    <script>
-        var __a__ = location.href.split("?")
-        __a__ = __a__[__a__.length-1]
-        __a__ = decodeURI(__a__)
-        __a__ = __a__.replaceAll('"', '').split("&")
-        var __b__ = {}
-        __a__.forEach(attri => {
-            __b__[attri.split("=")[0]] = attri.split("=")[1]
-        })
-        var location2 = {
-            "attributes": __b__
-        }
-    </script>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

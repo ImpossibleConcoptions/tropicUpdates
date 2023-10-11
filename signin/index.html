@@ -8,10 +8,10 @@
         }
 
         [storm] {
-            background-image: linear-gradient(-15deg,rgba(255,122,24,.75),#fff);
+            background-color: rgba(0, 68, 255, 0.75);
             margin: 10px;
             overflow: hidden;
-            color: #434343;
+            color: rgb(255, 255, 255);
             padding: 1rem;
             border-radius: 8px;
             z-index: 1;
@@ -20,42 +20,30 @@
         }
 
         [index] {
-            background-image: linear-gradient(-15deg,rgba(255, 70, 24, 0.75),#fff);
+            background-color: rgba(66, 116, 255, 0.75);
+            align-items: center;
         }
 
         body {
-            background-color: hsl(0, 39% 15%);
-            background-image: 
-                linear-gradient(
-                    -45deg,
-                    transparent 50%,
-                    hsl(0, 39%, 70%) 50%
-                );
+            background-image: hsl(0, 39%, 70%);
             margin: 0 auto;
         }
 
+        footer {
+            background-color: rgb(24, 255, 86);
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
         [hazard] {
-            color: red;
-        }
-
-        [non_hazard] {
-            color: green
-        }
-
-        [mod_hazard] {
-            color: orangered
-        }
-
-        [catIndex] {
-            background-color: rgb(165, 165, 165);
-            border: 7px solid black;
-            padding: 30px;
-            color: white;
-            margin: 10px;
+            color: rgb(255, 151, 151);
         }
 
         [tdcl] {
-            color:rgb(44, 44, 44);
+            color:rgb(255, 255, 255);
         }
 
         th, td {
@@ -113,7 +101,7 @@
             padding-left: 200px;
         }
 
-        input, select {
+        input {
             background-color: black;
             color: white;
         }
@@ -125,62 +113,59 @@
         h2 {
             font-weight: 400;
         }
-        
-        [bodied] {
-            margin: 10px;
-        }
 
-        [goBack] {
-            background-color: transparent;
+        [seeDetails] {
+            background-color: rgb(255, 106, 0);
             border: none;
-            font-size: 30px;
-            border-radius: 10px;
-        }
-
-        button:hover {
-            cursor: pointer;
-        }
-
-        footer {
-            background-color: rgb(235, 63, 0);
+            font-size: 20px;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #6cf;
-            z-index: 1;
+            border-radius: 10px;
+            color: white;
+        }
+
+        [seeDetails]:hover {
+            cursor: pointer;
+            background-color: rgba(255, 106, 0, 0.95);
         }
 
         [last] {
             margin-bottom: 50px;
         }
 
-        body a {
+        [bodied] {
             margin: 10px;
         }
 
-        [strmimg] {
-            width: 300px;
-        }
-
-        button, input[type="submit"] {
+        [shml], button {
             border: none;
             font-size: 20px;
             padding: 7px;
             border-radius: 10px;
-            background-color:whitesmoke;
-            color: black;
+            margin-left: 10px;
         }
 
-        button:hover, input[type="submit"]:hover {
+        [shml]:hover, button:hover {
             cursor: pointer;
             background-color: rgba(255, 203, 165, 0.95);
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        img {
+            border-radius: 20px;
         }
     </style>
 </head>
 <body>
     <button goBack onclick="history.back()">←</button>
-    <h4 bodied>Last Updated: Mon Oct 9, 2023 @ 9:19 AM</h4>
+    <h4 bodied>Last Updated: Mon Oct 12, 2023 @ 3:30 PM</h4>
     <div storm index last>
         <div>
             <h1>You are not signed in</h1>

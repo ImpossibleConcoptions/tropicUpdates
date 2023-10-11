@@ -6,10 +6,10 @@ setTimeout(() => {
 
 var threats = [
     [
-        ["Mexico"]
+        []
     ],
     {
-        "Lidia": ["Mexico"]
+        "Sean": []
     }
 ]
 
@@ -30,12 +30,12 @@ if (username != undefined && loc != undefined) {
             .replaceAll("--location--", loc)
             .replaceAll("--are_is--", (threatsToLoc == 1 ? "is" : "are"))
             .replaceAll("--s_--", (threatsToLoc == 1 ? "" : "s"))
-            .replaceAll("--lidiaThreat--", (threats[1].Lidia.includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
+            .replaceAll("--seanThreat--", (threats[1].Sean.includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
     })
 } else {
     document.body.innerHTML = 
     `
-    <div storm index last>
+    <div last index storm>
         <div>
             <h1>You are not signed in</h1>
             <a href='./signin'>
