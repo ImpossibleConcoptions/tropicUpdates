@@ -52,5 +52,5 @@ if (username != undefined && loc != undefined) {
 }
 
 function reload(element) {
-    var lastsrc = element.src; element.src = ''; setTimeout(() => {element.src = lastsrc}, 1000)
+    element.src += '&'
 }
