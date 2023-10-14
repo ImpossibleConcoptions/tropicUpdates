@@ -6,10 +6,16 @@ setTimeout(() => {
 
 var threats = [
     [
+        [],
+        [],
+        ["USVI"],
         []
     ],
     {
-        "Sean": []
+        "Sean": [],
+        "92C": [],
+        "94L": ["USVI"],
+        "99W": ["Vietnam"]
     }
 ]
 
@@ -30,6 +36,9 @@ if (username != undefined && loc != undefined) {
             .replaceAll("--location--", loc)
             .replaceAll("--are_is--", (threatsToLoc == 1 ? "is" : "are"))
             .replaceAll("--s_--", (threatsToLoc == 1 ? "" : "s"))
+            .replaceAll("--92cThreat--", (threats[1]["92C"].includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
+            .replaceAll("--94lThreat--", (threats[1]["94L"].includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
+            .replaceAll("--99wThreat--", (threats[1]["99W"].includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
             .replaceAll("--seanThreat--", (threats[1].Sean.includes(loc) ? `Threat to ${loc}` : `No Threat To ${loc}`))
     })
 } else {
