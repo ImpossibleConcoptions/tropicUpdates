@@ -3,13 +3,12 @@ setTimeout(() => {
     document.querySelector('html').style.backgroundImage = "none";
 }, 0)
 
-var username = location2.attributes["usrnm"]
+var passkeys = [
+    "23FREE"
+]
+var passkey = location2.attributes["passkey"]
 
-if (username != undefined) {
-    document.querySelectorAll("[usrloc]").forEach(elm => {
-        elm.innerHTML = elm.innerHTML.toString().replaceAll("--username--", username)
-    })
-} else {
+if (!passkeys.includes(passkey)) {
     document.body.innerHTML = 
     `
     <div last index storm>
@@ -17,11 +16,7 @@ if (username != undefined) {
             <h1>You are not signed in</h1>
             <a href='./signin'>
                 <button>Sign In</button>
-                <br><br>
             </a>
-            <h3>
-                We do not store ANY information
-            </h3>
         </div>
     </div>
     `
