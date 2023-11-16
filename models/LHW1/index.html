@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Invest 94L – 2023</title>
+    <title>LHW Model 1</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -21,7 +21,15 @@
 
         [index] {
             background-color: rgba(66, 116, 255, 0.75);
-            align-items: center;
+        }
+
+        [potential] {
+            background-color: rgba(95, 255, 111, 0.75);
+            color: black !important;
+        }
+
+        [potential] [tdcl] {
+            color: black !important;
         }
 
         body {
@@ -150,6 +158,7 @@
         }
         
         a {
+            text-decoration: none;
             color: inherit;
         }
 
@@ -159,68 +168,21 @@
 
         img {
             border-radius: 20px;
-            width: 300px;
-            margin: 10px;
         }
     </style>
 </head>
 <body>
     <button goBack onclick="history.back()">←</button>
-    <center>
-        <h4 bodied>Last Updated: Mon Oct 14, 2023 @ 11:28 PM</h4>
-    </center>
-<div storm>
-<div data>
-<h1 title>94L</h1>
-<h3 hazard>Organized Storm</h3>
-<table tdcl>
-<h2 bold>FORECAST</h2>
-<tr>
-<th>Date</th>
-<th>Speed</th>
-<th>Category</th>
-<th>Areas In Danger</th>
-</tr>
-<tr>
-<td>TBD</td>
-<td>TBD</td>
-<td  CAT>TBD</td>
-<td>TBD</td>
-</tr>
-</table>
-<div>
-<iframe id="nhc1" width="320" height="280" scrolling="no" frameborder="0" src="https://www.nhc.noaa.gov/widgets/nhc_widget.shtml"></iframe>
-</div>
-</div>
-</div>
-<div storm>
-<div kpm>
-<h2 bold>IMAGES <h3><small>(Click on any image to reload)</small></h3></h2>
-<img onclick="reload(this)" strmimg src="https://cyclonicwx.com/data/tracks/al942023track.png" alt="Loading..."><p>Track</p>
-</div>
-<div kpm>
-<img onclick="reload(this)" strmimg src="https://cyclonicwx.com/data/sat/gifs/94L_ir.gif" alt="Loading..."><p>Satelite Image</p>
-</div>
-<div kpm>
-<img onclick="reload(this)" strmimg src="https://www.nhc.noaa.gov/storm_graphics/AT19/AL942023_5day_cone_no_line_and_wind.png" alt="Loading..."><p>Forecast</p>
-</div>
-<div kpm>
-<img onclick="reload(this)" strmimg src="https://cyclonicwx.com/data/sst/crw_sst_94L.png" alt="Loading..."><p>Sea Surface Tempatures</p>
-</div>
-</div>
-</div>
-<div last index storm>
-<div>
-<h4>MORE DATA ABOUT 94L:</h4>
-<ul>
-<li><a href="https://www.nhc.noaa.gov/archive/2023/94L.shtml">1 (FORECASTER DATA NHC)</a></li>
-<li><a href="about:blank">2 (INTERACTIVE MAP NHC)</a></li>
-</ul>
-</div>
-</div>    
-    <footer>
-        Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
-    </footer>
-    <script src="script.js"></script>
+    <div storm>
+        <div data>
+            <h1>NOV 16-20 LHW Model #1:</h1>
+            <img src="./2023NOV16/NOV16.jpeg" width="1000px"><br><br>
+        </div>
+        <button value="./2023NOV16/NOV16.jpeg" onclick="document.querySelector('img').src = this.value">NOV 16, 2023</button>
+        <button value="./2023NOV16/NOV17.jpeg" onclick="document.querySelector('img').src = this.value">NOV 17, 2023</button>
+        <button value="./2023NOV16/NOV18.jpeg" onclick="document.querySelector('img').src = this.value">NOV 18, 2023</button>
+        <button value="./2023NOV16/NOV19.jpeg" onclick="document.querySelector('img').src = this.value">NOV 19, 2023</button>
+        <button value="./2023NOV16/NOV20.jpeg" onclick="document.querySelector('img').src = this.value">NOV 20, 2023</button>
+    </div>
 </body>
 </html>
