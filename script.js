@@ -184,7 +184,7 @@ if (!passkeys.includes(passkey)) {
     <div storm index last>
         <div>
             <h1>If you would like a passkey, please <a under href="tel:+1 (713) 264-1913">contact me</a></h1>
-            <form action="/">
+            <form action="#">
                 <label for="usrnm">Passkey:</label><br>
                 <input type="text" name="passkey"/><br><br>
                 <input type="submit" value="Open Page">
