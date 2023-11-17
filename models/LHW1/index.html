@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>LHW Model 1</title>
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -173,19 +174,29 @@
 </head>
 <body>
     <button goBack onclick="history.back()">←</button>
+    <h1 bodied>NOV 16-20 LHW Model #1:</h1>
     <div storm>
         <div data>
-            <h1>NOV 16-20 LHW Model #1:</h1>
-            <img src="./2023NOV16/NOV16.jpeg" width="1000px"><br><br>
+            <h1>Rain Forcast:</h1>
+            <img src="./2023NOV17/NOV17R.jpg" width="1000px" id="r"><br><br>
             <table>
                 <tr>
-                    <td><button value="./2023NOV16/NOV16.jpeg" onclick="document.querySelector('img').src = this.value">NOV 16, 2023</button></td>
-                    <td><button value="./2023NOV16/NOV17.jpeg" onclick="document.querySelector('img').src = this.value">NOV 17, 2023</button></td>
-                    <td><button value="./2023NOV16/NOV18.jpeg" onclick="document.querySelector('img').src = this.value">NOV 18, 2023</button></td>
+                    <td><button value="./2023NOV17/NOV17R.jpg" onclick="document.querySelector('#r').src = this.value">NOV 16, 2023</button></td>
+                    <td><button value="./2023NOV17/NOV18R.jpg" onclick="document.querySelector('#r').src = this.value">NOV 17, 2023</button></td>
+                    <td><button value="./2023NOV17/NOV19R.jpg" onclick="document.querySelector('#r').src = this.value">NOV 18, 2023</button></td>
                 </tr>
+            </table>
+        </div>
+    </div>
+    <div storm>
+        <div data>
+            <h1>Wind Forcast:</h1>
+            <img src="./2023NOV17/NOV17W.jpg" width="1000px" id="w"><br><br>
+            <table>
                 <tr>
-                    <td><button value="./2023NOV16/NOV19.jpeg" onclick="document.querySelector('img').src = this.value">NOV 19, 2023</button></td>
-                    <td><button value="./2023NOV16/NOV20.jpeg" onclick="document.querySelector('img').src = this.value">NOV 20, 2023</button></td>
+                    <td><button value="./2023NOV17/NOV17W.jpg" onclick="document.querySelector('#w').src = this.value">NOV 16, 2023</button></td>
+                    <td><button value="./2023NOV17/NOV18W.jpg" onclick="document.querySelector('#w').src = this.value">NOV 17, 2023</button></td>
+                    <td><button value="./2023NOV17/NOV19W.jpg" onclick="document.querySelector('#w').src = this.value">NOV 18, 2023</button></td>
                 </tr>
             </table>
         </div>
