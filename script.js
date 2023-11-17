@@ -3,8 +3,9 @@ setTimeout(() => {
     document.querySelector('html').style.backgroundImage = "none";
 }, 0)
 
+// add # to keys!
 var passkeys = [
-    "23FREE"
+    "23FREE#"
 ]
 var passkey = location2.attributes["passkey"]
 
