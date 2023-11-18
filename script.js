@@ -186,6 +186,7 @@ if (!passkeys.includes(passkey)) {
         <div>
             <h1>If you would like a passkey, please <a under href="tel:+1 (713) 264-1913">contact me</a></h1>
             <form action="#">
+                <input type="text" name="timeout" value="${Date.now()+3600000}" hidden/><br><br>
                 <label for="usrnm">Passkey:</label><br>
                 <input type="text" name="passkey"/><br><br>
                 <input type="submit" value="Open Page">

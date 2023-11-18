@@ -177,37 +177,32 @@
     </style>
 </head>
 <body>
-    <center>
-        <h1 bodied usrloc><img src="favicon.ico" width="30pt"> Welcome</h1>
-        <img src="models/GFS/2023NOV18.png" alt="Loading..." width="1000px">
-    </center>
-<div last potential storm>
-<div data>
-    <h1 title>Models</h1>
-    <ul>
-        <li><h2><a href="./models/LHW1">LHW Model 1</a></h2></li>
-    </ul>
-    <ul>
-        <li><h2><a href="./models/GFS">GFS</a></h2></li>
-    </ul>
-</div>
-</div>
+    <button goBack onclick="history.back()">←</button>
+    <div storm>
+        <div>
+            <h2 bold>Forecast rainfall in Christiansted, USVI (by NOAA Global Forecast System)</h2>
+            <table>
+                <script>
+                    var output_DOM = document.querySelector("table")
+                    function output(val) {
+                        output_DOM.innerHTML=val
+                    }
+                    fetch(`https://api.open-meteo.com/v1/gfs?latitude=17.744757&longitude=-64.700152&daily=rain_sum&timezone=auto`).then(r => {
+                        r.json().then(v => {v
+                            var x = {"<th>Date</th>":"<th>Rain</th>"}
+                            v = v["daily"]
+                            v.time.forEach((val, indx) => {
+                                x[val] = v.rain_sum[indx] + " mm"
+                            })
+                            output(JSON.stringify(x).replace(":", "").replace("{", "<tr>").replace("}", "</tr>").replaceAll('"', '').replaceAll(",", "</td></tr><tr><td>").replaceAll(":", "</td><td>"))
+                        })
+                    })
+                </script>
+            </table>
+        </div>
+    </div>
     <footer>
         Made with ❤️ by Leonard Lamparter <a href="tel:+1 (713) 264-1913">(Contact Me)</a>
     </footer>
-    <script>
-        var __a__ = location.href.split("?")
-        __a__ = __a__[__a__.length-1]
-        __a__ = decodeURI(__a__)
-        __a__ = __a__.replaceAll('"', '').split("&")
-        var __b__ = {}
-        __a__.forEach(attri => {
-            __b__[attri.split("=")[0]] = attri.split("=")[1]
-        })
-        var location2 = {
-            "attributes": __b__
-        }
-    </script>
-    <script src="./script.js"></script>
 </body>
 </html>

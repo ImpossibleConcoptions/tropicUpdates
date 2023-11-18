@@ -174,30 +174,27 @@
 </head>
 <body>
     <button goBack onclick="history.back()">←</button>
-    <h1 bodied>NOV 16-20 LHW Model #1:</h1>
-    <div storm>
+    <div last storm>
         <div data>
-            <h1>Rain Forcast:</h1>
-            <img src="./2023NOV17/NOV17R.jpg" width="1000px" id="r"><br><br>
+            <h2 bold>Forecast rainfall in Christiansted, USVI (by Lamparter Hurricane Watches Model 1)</h2>
             <table>
-                <tr>
-                    <td><button value="./2023NOV17/NOV17R.jpg" onclick="document.querySelector('#r').src = this.value">NOV 16, 2023</button></td>
-                    <td><button value="./2023NOV17/NOV18R.jpg" onclick="document.querySelector('#r').src = this.value">NOV 17, 2023</button></td>
-                    <td><button value="./2023NOV17/NOV19R.jpg" onclick="document.querySelector('#r').src = this.value">NOV 18, 2023</button></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    <div storm>
-        <div data>
-            <h1>Wind Forcast:</h1>
-            <img src="./2023NOV17/NOV17W.jpg" width="1000px" id="w"><br><br>
-            <table>
-                <tr>
-                    <td><button value="./2023NOV17/NOV17W.jpg" onclick="document.querySelector('#w').src = this.value">NOV 16, 2023</button></td>
-                    <td><button value="./2023NOV17/NOV18W.jpg" onclick="document.querySelector('#w').src = this.value">NOV 17, 2023</button></td>
-                    <td><button value="./2023NOV17/NOV19W.jpg" onclick="document.querySelector('#w').src = this.value">NOV 18, 2023</button></td>
-                </tr>
+                <script>
+                    var x = {
+                        "<th>Date</th>":"<th>Rain</th>",
+                        "NOV18": "none",
+                        "NOV19": "showers",
+                        "NOV20": "none",
+                        "NOV21": "light rain",
+                        "NOV22": "rain",
+                        "NOV23": "showers",
+                        "NOV24": "none",
+                        "NOV25": "none",
+                        "NOV26": "none",
+                        "NOV27": "showers",
+                        "NOV28": "none",
+                    }
+                    document.querySelector("table").innerHTML = (JSON.stringify(x).replace(":", "").replace("{", "<tr>").replace("}", "</tr>").replaceAll('"', '').replaceAll(",", "</td></tr><tr><td>").replaceAll(":", "</td><td>"))
+                </script>
             </table>
         </div>
     </div>
